@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListarClienteController">
+   <children>
+      <TableView fx:id="tvTabela" layoutX="14.0" layoutY="50.0" prefHeight="366.0" prefWidth="601.0">
+        <columns>
+          <TableColumn fx:id="cCPF" prefWidth="119.0" text="CPF" />
+          <TableColumn fx:id="cNome" prefWidth="365.0" text="Nome" />
+            <TableColumn fx:id="cDivida" prefWidth="116.0" text="Divida" />
+        </columns>
+      </TableView>
+      <Label layoutX="252.0" layoutY="8.0" prefHeight="43.0" prefWidth="142.0" text="Clientes">
+         <font>
+            <Font name="Franklin Gothic Demi" size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="bVoltar" layoutX="14.0" layoutY="426.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+      <Button fx:id="bExcluir" layoutX="123.0" layoutY="426.0" mnemonicParsing="false" onAction="#Excluir" text="Excluir" />
+      <Button fx:id="bAlterar" layoutX="516.0" layoutY="426.0" mnemonicParsing="false" onAction="#AlterarD" text="Alterar divida" />
+      <Button fx:id="bEditar" layoutX="68.0" layoutY="426.0" mnemonicParsing="false" onAction="#Editar" text="Editar" />
+   </children>
+</AnchorPane>

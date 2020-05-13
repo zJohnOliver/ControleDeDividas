@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="voltar" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
+   <children>
+      <Button fx:id="bVoltar" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <Label layoutX="139.0" layoutY="35.0" text="Cadastrar Cliente">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cCPF" layoutX="185.0" layoutY="108.0" prefHeight="32.0" prefWidth="207.0" />
+      <TextField fx:id="cNome" layoutX="185.0" layoutY="148.0" prefHeight="32.0" prefWidth="207.0" />
+      <TextField fx:id="cTelefone" layoutX="184.0" layoutY="188.0" prefHeight="32.0" prefWidth="207.0" />
+      <TextField fx:id="cEndereço" layoutX="184.0" layoutY="227.0" prefHeight="32.0" prefWidth="207.0" />
+      <TextField fx:id="cDivida" layoutX="185.0" layoutY="267.0" prefHeight="32.0" prefWidth="207.0" />
+      <Button fx:id="bCadastrar" layoutX="227.0" layoutY="320.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="54.0" prefWidth="121.0" text="Cadastrar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="139.0" layoutY="114.0" text="CPF:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="154.0" text="Nome:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="194.0" text="Telefone:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="233.0" text="Endereço:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="273.0" text="Dívida:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

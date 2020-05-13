@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFXMLController">
+   <children>
+      <MenuBar fx:id="Menub" layoutY="1.0" prefHeight="27.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="Cadastrar" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar">
+            <items>
+                  <MenuItem fx:id="cadastrarB" mnemonicParsing="false" onAction="#cb" text="Boletos" />
+              <MenuItem fx:id="cadastrarC" mnemonicParsing="false" onAction="#cc" text="Cliente" />
+            </items>
+          </Menu>
+          <Menu fx:id="Sobre" mnemonicParsing="false" onAction="#s" text="Sobre" />
+        </menus>
+      </MenuBar>
+      <Label layoutX="165.0" layoutY="116.0" text="Seja Bem Vindo!">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="166.0" text="O que deseja Fazer?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="166.0" layoutY="252.0" mnemonicParsing="false" onAction="#dReceber" prefHeight="79.0" prefWidth="119.0" text="Divídas a Receber">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="308.0" layoutY="252.0" mnemonicParsing="false" onAction="#cPagar" prefHeight="79.0" prefWidth="119.0" text="Contas a Pagar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
